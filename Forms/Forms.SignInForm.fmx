@@ -1,0 +1,130 @@
+object SignInForm: TSignInForm
+  Left = 0
+  Top = 0
+  Caption = 'SignInForm'
+  ClientHeight = 597
+  ClientWidth = 300
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Margins.Top = 30.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 32.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Sign In'
+    TabOrder = 0
+  end
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 300.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Button1: TButton
+      Align = MostLeft
+      Position.Y = 1.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      TabOrder = 2
+      Text = 'Button1'
+    end
+  end
+  object Layout2: TLayout
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 140.000000000000000000
+    Size.Width = 280.000000000000000000
+    Size.Height = 245.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Label2: TLabel
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Username'
+      TabOrder = 1
+      object UsernameEdit: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        Position.Y = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Label3: TLabel
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 40.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 73.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Password'
+      TabOrder = 0
+      object PasswordEdit: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        Password = True
+        Position.Y = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object KeepConnectedCheckBox: TCheckBox
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 40.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Keep me connected'
+      TextSettings.WordWrap = True
+    end
+    object SignInButton: TButton
+      Align = Top
+      Enabled = False
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 186.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Confirm'
+      TintColor = claLimegreen
+    end
+  end
+end

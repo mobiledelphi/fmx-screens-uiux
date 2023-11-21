@@ -1,0 +1,279 @@
+object SignUpForm: TSignUpForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 600
+  ClientWidth = 300
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 300.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Button1: TButton
+      Align = MostLeft
+      Position.Y = 1.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      TabOrder = 4
+      Text = 'Button1'
+      OnClick = Button1Click
+    end
+  end
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Margins.Top = 10.000000000000000000
+    Position.Y = 60.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 32.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Sign Up'
+    TabOrder = 0
+  end
+  object Layout2: TLayout
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 110.000000000000000000
+    Size.Width = 280.000000000000000000
+    Size.Height = 459.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Label2: TLabel
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Username'
+      TabOrder = 3
+      object UsernameEdit: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        Position.Y = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = UsernameEditChange
+      end
+    end
+    object Label3: TLabel
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 40.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 83.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Password'
+      TabOrder = 2
+      object PasswordEdit: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        Password = True
+        Position.Y = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = PasswordEditChange
+      end
+    end
+    object SignInButton: TButton
+      Align = Top
+      Enabled = False
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 395.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Confirm'
+      TintColor = claLimegreen
+    end
+    object Label4: TLabel
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 40.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 146.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Repeat the Password *'
+      TabOrder = 8
+      object RepeatPasswordEdit: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 4
+        Password = True
+        Position.Y = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = RepeatPasswordEditChange
+        object RepeatPasswordErrorLabel: TLabel
+          Align = Top
+          StyledSettings = [Family, Style]
+          Margins.Top = 25.000000000000000000
+          Position.Y = 25.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claRed
+          TabOrder = 0
+        end
+      end
+    end
+    object Label5: TLabel
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 40.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 209.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'E-mail'
+      TabOrder = 4
+      object EmailEdit: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        Position.Y = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EmailEditChange
+        object EmailErrorLabel: TLabel
+          Align = Top
+          StyledSettings = [Family, Style]
+          Margins.Top = 25.000000000000000000
+          Position.Y = 25.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claRed
+          TabOrder = 0
+        end
+      end
+    end
+    object Label6: TLabel
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 50.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 489.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Telephone'
+      TabOrder = 1
+      object TelephoneEdit: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        Text = '+5571'
+        Position.Y = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        object TelephoneErrorLabel: TLabel
+          Align = Top
+          StyledSettings = [Family, Style]
+          Margins.Top = 25.000000000000000000
+          Position.Y = 25.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claRed
+          TabOrder = 0
+        end
+      end
+    end
+    object CheckBox1: TCheckBox
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 50.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 345.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'I Accept the Terms of Use and the Privacy Policy.'
+      TextSettings.WordWrap = True
+      OnChange = CheckBox1Change
+    end
+    object Label7: TLabel
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 40.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 272.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Telephone'
+      TabOrder = 0
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        Text = '+5571'
+        Position.Y = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Size.Width = 240.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        object Label8: TLabel
+          Align = Top
+          StyledSettings = [Family, Style]
+          Margins.Top = 25.000000000000000000
+          Position.Y = 25.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = claRed
+          TabOrder = 0
+        end
+      end
+    end
+  end
+end
